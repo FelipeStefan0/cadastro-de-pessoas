@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(53, 54, 53);
+}
+
+body::-webkit-scrollbar {
+  width: 12.5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(53, 54, 53);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 143, 52);
+  border-radius: 20px;
+  border: 3px solid rgb(53, 54, 53);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: rgb(226, 128, 47);
+  border-radius: 20px;
+  border: 3px solid rgb(53, 54, 53);
+}
+
+body h1 {
+  font-style: italic;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+body p#msg {
+  text-align: center;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 5px;
+  padding-top: 10px;
+  width: 255px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 40.5%;
+  display: none;
+}
+
+header {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.13);
+}
+
+header p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+  padding-left: 50px;
+  padding-top: 13px;
+  display: inline-block;
+}
+
+header img {
+  position: absolute;
+  padding-top: 8px;
+  padding-left: 15px;
+}
+
+section div {
+  border-radius: 5px;
+  margin-left: 100px;
+  padding: 20px;
+  width: 215px;
+  background-color: white;
+  display: inline-block;
+}
+
+section div label {
+  font-size: 15pt;
+  font-style: italic;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+section div input {
+  font-size: 13pt;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-top: 13px;
+  width: 193px;
+  height: 25px;
+  display: block;
+  outline: none;
+}
+
+section div input:focus {
+  border-color: rgb(139, 139, 255);
+}
+
+section div button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 11pt;
+  color: white;
+  background-color: royalblue;
+  margin: auto;
+  padding: 5px;
+  width: 105px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+section div button:active {
+  background-color: rgb(58, 91, 192);
+}
+
+section div#answers {
+  position: fixed;
+}
+
+section div#results {
+  width: 750px;
+  margin-left: 475px;
+  margin-bottom: 20px;
+  bottom: 157px;
+  display: none;
+}
+
+section div#results h2 {
+  font-style: italic;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+section div#results hr {
+  width: 300px;
+}
+
+section div#results h2 {
+  margin-top: 20px;
+}
+
+section div#results ul#listResults, ul#listResultMin, ul#listResultMax {
+  margin-top: 10px;
+}
+
+section div#results ul#listResults, ul#listResultMin, ul#listResultMax li{
+  font-size: 13pt;
+  margin-left: 40px;
+  color: rgb(179, 96, 28);
+}

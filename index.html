@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="JS/script.js"></script>
+  <title>Exercício 04 | Autoria Web</title>
+</head>
+
+<body>
+  <header id="headerOn" onmouseenter="mlkFino()" onmousemove="mlkFino()" onmouseout="normal()">
+    <p id='name'>Felipe Marques de Stefano</p>
+    <img src="img/Z7NL.gif" alt="gif.gif" width="32px" height="32px">
+  </header>
+  <h1>CADASTRO</h1>
+  <section class="sec1">
+    <div id="answers">
+      <form onsubmit="verificar()">
+        <label>Nome: </label>
+        <input type="text" name="nome" id="nome" autocomplete="off" required >
+        <label>Sexo: </label>
+        <input type="text" name="sexo" id="sexo" autocomplete="off" required placeholder="Masculino ou Feminino">
+        <label>Idade: </label>
+        <input type="number" name="idade" id="idade" autocomplete="off" required >
+        <button type="button" id="cadastrar" onclick="add()">Cadastrar</button>
+        <button type="button" id="analisar" onclick="ana()">Analisar</button>
+      </form>
+    </div>
+    <p id="msg"></p>
+    <div id="results">
+      <h2 id="qtdPessoasCadastradas">Pessoas Cadastradas: 0</h2>
+      <hr>
+      <ul id="listResults">
+      </ul>
+      <h2>Pessoa(s) mais velha(s):</h2>
+      <hr>
+      <ul id="listResultMax">
+      </ul>
+      <h2>Pessoa(s) mais nova(s):</h2>
+      <hr>
+      <ul id="listResultMin">
+      </ul>
+    </div>
+  </section>
+</body>
+
+</html>
